@@ -1,0 +1,139 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f9fc, #dfe7f3);
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+/* Separador visual entre el título y el contenido */
+.title-separator {
+    width: 80%;
+    border: 1px solid #3498db;
+    margin-bottom: 20px;
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin: 15px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Secciones de texto */
+.resumer__section {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.resumer__section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Área de texto habilitada (para escritura) */
+.resumer__textarea {
+    width: 100%;
+    height: 120px;
+    border: 2px solid #dfe6e9;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin: 15px 0;
+    resize: none;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+    pointer-events: auto; /* Habilitado para escribir */
+    box-sizing: border-box;
+}
+
+/* Área de visualización deshabilitada (solo lectura) */
+.resumer__textarea:disabled {
+    pointer-events: none; /* Deshabilitado para solo visualización */
+    background-color: #ececec;
+    color: #95a5a6;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón estilizado */
+.resumer__button {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 30px auto;
+    display: block;
+    text-transform: uppercase;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.4s, transform 0.2s, box-shadow 0.3s;
+}
+
+.resumer__button:hover {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.resumer__button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Texto reemplazado para más atractivo */
+.resumer__section h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* Adaptabilidad para pantallas pequeñas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .resumer__textarea {
+        height: 100px;
+    }
+
+    .resumer__button {
+        font-size: 1.1rem;
+        padding: 12px 24px;
+    }
+}

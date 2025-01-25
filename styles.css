@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e6f0ff;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+    background-color: #003d99;
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  /* Main Styles */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+  }
+  
+  /* Names Section */
+  .names {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .names h2 {
+    text-align: center;
+    color: #003d99;
+    margin-bottom: 1rem;
+  }
+  
+  .names ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .names li {
+    margin: 1.5rem 0;
+    font-size: 1.5rem; /* Tamaño aumentado */
+  }
+  
+  /* Menu Navigation */
+  .menu {
+    display: flex;
+    flex-direction: column; /* Cambia a diseño vertical */
+    align-items: center; /* Centra los botones */
+    gap: 1rem;
+  }
+  
+  .menu button {
+    background-color: #003d99;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.4rem; /* Tamaño aumentado */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegura que todos los botones sean del mismo tamaño */
+    max-width: 600px; /* Tamaño máximo igual que la sección de nombres */
+  }
+  
+  .menu button:hover {
+    background-color: #002d73;
+  }
+  
+  .menu button:active {
+    background-color: #001f4d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #003d99;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Hace que el footer se mantenga en la parte inferior */
+    width: 100%;
+  }
+  
